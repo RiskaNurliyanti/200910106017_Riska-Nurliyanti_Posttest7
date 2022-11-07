@@ -1,0 +1,311 @@
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+input,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+:root{
+  --primary-color: #26d097;
+  --secondary-color: #fff;
+  --body-color: #fff;
+ 
+}
+.dark-theme{
+  --primary-color: #2f5167;
+  --secondary-color: rgb(245, 78, 0);
+  --body-color : rgb(2, 85, 124);
+}
+
+body {
+  font-family: "Avenir Next";
+  background-color: var(--body-color);
+  
+}
+
+nav {
+  position: fixed;
+  background: var(--primary-color);
+  height: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav ul.navbar {
+  float:right;
+  margin: 0;
+  padding: 0;
+  display: block;
+  /* border-bottom: rgba(14, 13, 13, 0.2) solid; */
+
+}
+nav ul.navbar li {
+  display: inline-block;
+  margin: 0 10px; 
+
+}
+nav ul.navbar li a {
+  color: var(--secondary-color);;
+  font-size: 20px; 
+  text-decoration: none;
+ 
+}
+nav ul.navbar li a:hover {
+  color:#666;
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.main {
+  padding: 100px 80px;
+  background-color: var(-secondary-color);
+}
+
+
+
+#icon {
+  width: px;
+  cursor: pointer;
+}
+
+.header-logo {
+  color: var(--secondary-color);;
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.container h1 {
+  font-size: 70px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container h2 {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contents {
+  background-color: var(-secondary-color);
+  height: 500px;
+  margin-top: 100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
+.tanaman-title {
+  border-bottom: 3px solid #6ce07e;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+
+.contents-item {
+  margin: 30px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-color);
+  /* display: none; */
+  
+}
+
+.contents-item:hover{
+ color: var(--secondary-color);;
+ transition: all .3s ease-in-out;
+}
+
+.contents p {
+  text-align: center;
+}
+
+.contents-item img {
+  width: 200px;
+  height: 250px;
+}
+
+#det  {
+  font-size: 14px;;
+  margin-top:50px;
+}
+
+
+
+#btn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: var(--primary-color);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+
+#btn:hover {
+  background-color: #555;
+}
+li {
+  list-style: none;
+  float: left;
+  padding: 33px 20px;
+  color: var(--secondary-color);;
+}
+
+.footer {
+  background-color: #2f5167;
+  color: var(--secondary-color);;
+  padding: 45px 100px;
+  font-size: 15px;
+  line-height: 24px;
+
+  position: relative;
+  bottom: 0;
+}
+
+.footer-logo {
+  font-size: 32px;
+  margin-bottom: 20;
+}
+
+
+
+
+/*untuk layar device berukuran kecil*/
+@media screen and (max-width: 750px) {
+  nav {
+    position: fixed;
+    background: var(--primary-color);
+    height: 90px;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  nav ul.navbar {
+    float:right;
+    margin: 0;
+    padding: 0;
+    display: block;
+    border-bottom: rgba(14, 13, 13, 0.2) solid;
+  
+  }
+  nav ul.navbar li {
+    display: inline-block;
+    margin: 0 10px; 
+  
+  }
+  nav ul.navbar li a {
+    color: var(--secondary-color);
+    font-size: 10px; 
+    text-decoration: none;
+   
+  }
+  nav ul.navbar li a:hover {
+    color:#666;
+  }
+  
+
+  #icon {
+    width: 15px;
+    cursor: pointer;
+   
+  }
+
+  .header-logo {
+    font-size: 18px;
+    padding: 10px 20px;
+    float: left;
+  }
+
+  .container h1 {
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .container h2 {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .contents {
+    height: 900px;
+    margin-top: 100px;
+    overflow-y: scroll;
+  }
+
+  
+  .tanaman-title {
+    border-bottom: 3px solid #6ce07e;
+    font-size: 14px;
+    padding-bottom: 7px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .contents-item {
+    margin: 15px;
+    background-color: var(--primary-color);
+    height: 200px;
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    ;
+    
+  }
+
+  .contents p {
+    text-align: center;
+  }
+
+  .contents-item img {
+    width: 100px;
+    height: 150px;
+   
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-size: 16px;
+   
+  }
+
+}

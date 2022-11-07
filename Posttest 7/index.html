@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="svg/icon.svg" />
+
+    <link rel="stylesheet" href="stylesheet/style.css" />
+
+    <title>Toko Tanaman Polaris</title>
+  </head>
+  <body>
+    <!-- <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="jquery.js"></script> -->
+    <div class="header">
+      <nav>
+        <div class="header-logo">Toko Tanaman Polaris</div>
+        <!-- <div class="header-navbar">
+          <a href="#home" style="text-decoration: none"><p>Home</p></a>
+          <a href="about.html" style="text-decoration: none"><p>About</p></a>
+          <a href="" style="text-decoration: none"><p>Masuk</p></a>
+          <a href="" style="text-decoration: none"><p>Daftar</p></a>
+        </div> -->
+        <ul class="navbar">
+          <li>
+            <a href="#home"> Home </a>
+          </li>
+          <li>
+            <a class="about" href="about.html"> About </a>
+          </li>
+          <li>
+            <a href="katalog.html"> Katalog </a>
+          </li>
+          <li>
+            <a href="daftarpesan.php"> Daftar Pesanan </a>
+          </li> 
+          <li>
+            <a href="login.php"> Login </a>
+          </li>
+          <li>
+            <a href="logout.php"> Logout </a>
+          </li>
+          <li>
+            <img src="Assets/moon.png" alt="dark" id="icon" />
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="copy-container">
+        <div class="container">
+          <h1 id="sub-judul">Toko Tanaman Polaris</h1>
+          <h2>Belanja Tanaman Disini</h2>
+          <h3 class="tanaman-title">Tanaman</h3>
+        </div>
+        <div class="contents" style="display: none" id="home">
+          <div class="contents-item">
+            <img class="plant" src="Assets/peace-lily.jpg" alt="Peace Lily" />
+            <p>Peace Lily</p>
+            <p>Rp 50.000</p>
+          </div>
+          <div class="contents-item">
+            <img class="plant" src="Assets/alocasia.jpg" alt="Alocasia" />
+            <p>Alocasia</p>
+            <p>Rp 100.000</p>
+          </div>
+          <div class="contents-item">
+            <img class="plant" src="Assets/kaktus.jpg" alt="Kaktus" />
+            <p>Kaktus</p>
+            <p>Rp 25.000</p>
+          </div>
+          <div class="contents-item">
+            <img
+              class="plant"
+              src="Assets/lidahmertua.jpg"
+              alt="Lidah Mertua"
+            />
+            <p>Lidah Mertua</p>
+            <p>Rp 30.000</p>
+          </div>
+        </div>
+        <button class="button" id="btn">Tampilkan Deskripsi</button>
+        <p id="det" style="display: none">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          ipsa deserunt natus nostrum voluptatibus temporibus accusantium. Sint
+          fugiat dolore, aspernatur incidunt laboriosam reiciendis, eos,
+          voluptas odio natus nisi quam! Quasi commodi laudantium distinctio
+          architecto assumenda deserunt id ipsum odit, quaerat vero hic,
+          nesciunt corporis repellat exercitationem recusandae dolores, iure
+          soluta.
+        </p>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-logo">Toko Tanaman Polaris</div>
+      <hr />
+      <p>Copyright &copy 2022 All Rights Reserved by Riska Nurliyanti</p>
+    </footer>
+    <script>
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "Assets/sun.png";
+          alert("Dark-Mode Berhasil!");
+          const desk = document.getElementById("det");
+          desk.style.fontStyle = "italic";
+        } else {
+          icon.src = "Assets/moon.png";
+          alert("Light-Mode Berhasil!");
+          const desk = document.getElementById("det");
+          desk.style.fontStyle = "normal";
+        }
+      };
+
+      const button = document.getElementById("btn");
+      button.addEventListener("click", function showInfo() {
+        const info = document.getElementById("det");
+        if (info.style.display == "none") {
+          info.style.display = "block";
+        } else {
+          info.style.display = "none";
+        }
+      });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+  </body>
+</html>

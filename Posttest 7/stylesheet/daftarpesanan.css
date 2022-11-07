@@ -1,0 +1,83 @@
+
+table {
+    margin-top: 30px;
+}
+
+.thead {
+    border: none;
+    background-color: aquamarine;
+    color: white;
+}
+
+td, th {
+    padding: 15px 20px;
+}
+
+th {
+    padding: 10px 0px;
+}
+
+td {
+    border-bottom: 1px solid rgb(187, 138, 138);
+}
+
+table a {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.edit a {
+    background-color: green;
+    color: white;
+}
+
+.hapus a {
+    background-color: red;
+    color: white;
+}
+
+.edit a:hover{
+    background-color: rgb(28, 121, 0);
+}
+
+.hapus a:hover {
+    background-color: rgb(179, 0, 0);
+}
+
+.main {
+    padding: 50px 40px;
+    background-color: var(-secondary-color);
+  }
+  
+
+.tambah {
+    text-decoration: none;
+    padding: 10px 20px;
+    align-items: center;
+    /* margin-left: 25px; */
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color:  var(--primary-color);
+    color: white;
+}
+
+.tambah:hover {
+    color: #666;
+}
+
+
+.laporanpenjualan {
+    text-decoration: none;
+    float:right;
+    margin-top:10;
+    margin-bottom:20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color:  var(--primary-color);
+    color: white;
+}
+
+.laporanpenjualan:hover {
+    color: #666;
+}
+

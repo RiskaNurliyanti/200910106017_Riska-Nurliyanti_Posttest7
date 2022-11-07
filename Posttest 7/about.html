@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="svg/icon.svg" />
+    <title>About</title>
+    <link rel="stylesheet" href="stylesheet/about.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <div class="header-logo">Toko Tanaman Polaris</div>
+        <!-- <div class="header-navbar">
+          <a href="#home" style="text-decoration: none"><p>Home</p></a>
+          <a href="about.html" style="text-decoration: none"><p>About</p></a>
+          <a href="" style="text-decoration: none"><p>Masuk</p></a>
+          <a href="" style="text-decoration: none"><p>Daftar</p></a>
+        </div> -->
+        <ul class="navbar">
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <a href="#about"> About </a>
+          </li>
+          <li>
+            <a href="katalog.html"> Katalog </a>
+          </li> 
+          <li>
+            <a href="daftarpesan.php"> Daftar Pesanan </a>
+          </li> 
+          <li>
+            <img src="Assets/moon.png" alt="dark" id="icon" />
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="profil-container" align="center" style="display: none">
+        <h2 id="toko" style="text-align: center">Toko Kami</h2>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img
+                src="Assets/logo.png"
+                alt="Toko Tanaman Polaris"
+                style="width: 100%"
+              />
+              <div class="container">
+                <h2>Toko Tanaman Polaris</h2>
+                <table>
+                  <tr>
+                    <td width="100" class="title">Lokasi</td>
+                    <td class="title">Sejak</td>
+                  </tr>
+                  <tr>
+                    <td class="subtitle">Virtual</td>
+                    <td colspan="3" class="subtitle">2022</td>
+                  </tr>
+                </table>
+                <p>tanamanpolaris@gmail.com</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-logo">Toko Tanaman Polaris</div>
+
+      <div class="footer-list">
+        <ul>
+          <li>
+            <a href="about.html" style="text-decoration: none"><p>About</p></a>
+          </li>
+          <li>
+            <a href="" style="text-decoration: none"><p>Hubungi Kami</p> </a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <p>Copyright &copy 2022 All Rights Reserved by Riska Nurliyanti</p>
+    </div>
+
+    <script>
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "Assets/sun.png";
+          alert("Dark-Mode Berhasil!");
+          const desk = document.getElementById("det");
+          desk.style.fontStyle = "italic";
+        } else {
+          icon.src = "Assets/moon.png";
+          alert("Light-Mode Berhasil!");
+          const desk = document.getElementById("det");
+          desk.style.fontStyle = "normal";
+        }
+      };
+
+      const tokokami = document.getElementById("toko");
+      tokokami.style.fontSize = "30px";
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
